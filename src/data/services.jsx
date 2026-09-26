@@ -9,31 +9,22 @@ import {
 import { SiMongodb, SiPostgresql, SiMysql, SiTypescript } from "react-icons/si";
 
 export const services = [
- {
-  title: "Frontend Development",
-  description:
-    "Designing and building responsive, user-centered interfaces using React.js, Next.js, and Tailwind CSS, with a focus on performance, accessibility, and seamless user experience across devices.",
-  icon: <FaReact className="text-blue-500 text-4xl" />,
-},
-{
-  title: "Backend Development",
-  description:
-    "Developing robust and scalable APIs with Node.js, Express, and python frameworks like Flask and Django, implementing secure authentication, business logic, and efficient data handling for real-world applications.",
-  icon: <FaNodeJs className="text-green-600 text-4xl" />,
-},
-{
-  title: "Database Management",
-  description:
-    "Designing and managing efficient data structures using MongoDB and MySQL, PostgreSQL, ensuring data integrity, scalability, and optimized query performance.",
-  icon: <FaDatabase className="text-yellow-600 text-4xl" />,
-},
+  {
+    title: "Frontend Development",
+    description:
+      "Designing and building responsive, user centered interfaces using React.js, Next.js, TanStack Start, and Tailwind CSS, with a focus on performance, accessibility, and seamless user experiences across devices.",
+    icon: <FaReact className="text-blue-500 text-4xl" />,
+  },
+  {
+    title: "Mobile App Development",
+    description:
+      "Designing and building responsive, user centered mobile applications using React Native and Expo, with a focus on performance, accessibility, intuitive interactions, and seamless user experiences across iOS and Android devices.",
+    icon: <FaReact className="text-blue-500 text-4xl" />,
+  },
 ];
 
 export const techStack = [
-  {
-    name: "JavaScript",
-    icon: <FaJs className="text-yellow-400 text-xl md:text-4xl" />,
-  },
+ 
   {
     name: "React",
     icon: <FaReact className="text-cyan-500 text-xl md:text-4xl" />,

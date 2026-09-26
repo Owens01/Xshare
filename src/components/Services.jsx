@@ -11,11 +11,11 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="bg-[#090e34] relative dark:bg-inherit mt-8"
+      className="bg-indigo-100 mt-10 relative dark:bg-[#121212]"
     >
-      <div className="max-w-7xl mx-auto px-4 text-center py-8">
+      <div className="max-w-7xl mx-auto flex flex-col justify-center md:h-dvh text-center px-3 md:px-0">
         <h2
-          className="text-2xl sm:text-3xl font-bold text-blue-600 mb-4 dark:text-blue-700"
+          className="text-xl md:text-2xl font-semibold text-indigo-400 mb-4"
           data-aos="fade"
           data-aos-duration="500"
           data-aos-delay="700"
@@ -23,17 +23,17 @@ const Services = () => {
           What I Do
         </h2>
         <p
-          className="text-white mb-12 dark:text-white/60"
+          className="dark:text-white mb-12 dark:text-white/60"
           data-aos="slide-right"
           data-aos-delay="1000"
           data-aos-duration="2000"
         >
-          I'm a full-stack engineer delivering robust, scalable, and efficient
-          web solutions.
+          I'm a frontend engineer delivering robust, scalable, and efficient
+          web/mobile applications.
         </p>
 
         {/* Service Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (
             <div
               key={index}
@@ -54,7 +54,7 @@ const Services = () => {
 
         {/* Tech Stack */}
         <h3
-          className="text-xl md:text-2xl text-blue-600 font-semibold mb-4"
+          className="text-xl md:text-2xl text-indigo-400 font-semibold mb-4"
           data-aos="slide-left"
           data-aos-delay="400"
           data-aos-duration="800"
@@ -70,7 +70,7 @@ const Services = () => {
                 className="flex flex-col justify-between items-center gap-2"
               >
                 {tech.icon}
-                <span className="mt-2 md:text-sm text-[8px] text-white dark:text-white/80">
+                <span className="mt-2 md:text-sm text-[8px] text-black dark:text-white/80">
                   {tech.name}
                 </span>
               </div>

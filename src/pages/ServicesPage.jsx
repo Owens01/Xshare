@@ -6,18 +6,18 @@ const ServicesPage = () => {
   return (
     <PageTransition>
       <Helmet>
-        <title>Services | Emmanuel Ebri</title>
+        <title>Services | Owen</title>
         <meta
           name="description"
-          content="Full-stack development services — frontend, backend, and database management with modern technologies."
+          content="Frontend development services."
         />
-        <meta property="og:title" content="Services | Emmanuel Ebri" />
+        <meta property="og:title" content="Services | Owen" />
         <meta
           property="og:description"
-          content="Full-stack development services — frontend, backend, and database management."
+          content="Frontend development services."
         />
       </Helmet>
-      <div className="pt-20">
+      <div className="pt-20 md:pt-0 bg-indigo-100">
         <Services />
       </div>
     </PageTransition>

@@ -40,7 +40,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.name}
-              className="hover:text-indigo-400 transition"
+              className="hover:text-indigo-400 transition mt-2 md:mt-0"
             >
               {link.icon}
             </a>

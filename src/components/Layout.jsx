@@ -22,7 +22,7 @@ const Layout = () => {
             color: "#fff",
           },
           success: {
-            iconTheme: { primary: "#3b82f6", secondary: "#fff" },
+            iconTheme: { primary: "#818CF8", secondary: "#fff" },
           },
         }}
       />
