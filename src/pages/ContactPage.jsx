@@ -6,15 +6,15 @@ const ContactPage = () => {
   return (
     <PageTransition>
       <Helmet>
-        <title>Contact | Emmanuel Ebri</title>
+        <title>Contact | Owen</title>
         <meta
           name="description"
-          content="Get in touch with Emmanuel Ebri for web development projects, collaborations, or freelance opportunities."
+          content="Get in touch with Owen for web/mobile app development projects, collaborations, or freelance opportunities."
         />
-        <meta property="og:title" content="Contact | Emmanuel Ebri" />
+        <meta property="og:title" content="Contact | Owen" />
         <meta
           property="og:description"
-          content="Get in touch with Emmanuel Ebri for web development projects and collaborations."
+          content="Get in touch with Owen for web/mobile app development projects and collaborations."
         />
       </Helmet>
       <div className="pt-20">

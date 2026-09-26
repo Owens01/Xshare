@@ -7,7 +7,7 @@ const NotFoundPage = () => {
   return (
     <PageTransition>
       <Helmet>
-        <title>404 — Page Not Found | Emmanuel Ebri</title>
+        <title>404 Page Not Found | Owen</title>
       </Helmet>
       <div className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-[#121212] text-gray-900 dark:text-white px-6">
         <motion.h1

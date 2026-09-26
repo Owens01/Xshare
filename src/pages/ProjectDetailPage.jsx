@@ -20,11 +20,11 @@ const ProjectDetailPage = () => {
   return (
     <PageTransition>
       <Helmet>
-        <title>{project.title} | Emmanuel Ebri</title>
+        <title>{project.title} | Owen</title>
         <meta name="description" content={project.description} />
         <meta
           property="og:title"
-          content={`${project.title} | Emmanuel Ebri`}
+          content={`${project.title} | Owen`}
         />
         <meta property="og:description" content={project.description} />
         <meta property="og:image" content={project.image} />

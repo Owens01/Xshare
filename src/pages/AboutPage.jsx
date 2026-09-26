@@ -8,15 +8,15 @@ const AboutPage = () => {
   return (
     <PageTransition>
       <Helmet>
-        <title>About | Emmanuel Ebri</title>
+        <title>About | Owen</title>
         <meta
           name="description"
-          content="Learn about Emmanuel Ebri — a full-stack developer with a background in public health, passionate about building scalable web applications."
+          content="Learn about Owen — a frontend developer with a background in computer science, building scalable web/mobile applications."
         />
-        <meta property="og:title" content="About | Emmanuel Ebri" />
+        <meta property="og:title" content="About | Owen" />
         <meta
           property="og:description"
-          content="Learn about Emmanuel Ebri — a full-stack developer passionate about building scalable web applications."
+          content="Learn about Owen — a frontend developer who loves building scalable web/mobile applications."
         />
       </Helmet>
       <div className="pt-20">
