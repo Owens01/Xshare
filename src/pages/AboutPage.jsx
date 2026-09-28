@@ -21,7 +21,7 @@ const AboutPage = () => {
       </Helmet>
       <div className="pt-20">
         <About />
-        <div className="px-6 md:px-20 bg-gray-50 dark:bg-[#0e0e0e] transition-colors duration-300">
+        <div className="px-6 md:px-20 bg-indigo-100 dark:bg-[#0e0e0e] transition-colors duration-300">
           <ExperienceTimeline />
         </div>
         {/* <div className="px-6 md:px-20 py-10 bg-white dark:bg-[#121212] transition-colors duration-300">
