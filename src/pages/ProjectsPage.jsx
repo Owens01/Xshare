@@ -9,12 +9,12 @@ const ProjectsPage = () => {
         <title>Projects | Owen</title>
         <meta
           name="description"
-          content="Explore my portfolio of web/mobile app development projects."
+          content="Explore my web/mobile app development projects."
         />
         <meta property="og:title" content="Projects | Owen" />
         <meta
           property="og:description"
-          content="Explore my portfolio of web/mobile app development projects."
+          content="Explore my web/mobile app development projects."
         />
       </Helmet>
       <div className="pt-20">

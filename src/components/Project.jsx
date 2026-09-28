@@ -22,13 +22,13 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 bg-white dark:bg-gray-900 px-4 sm:px-10"
+      className="py-20  bg-indigo-100 dark:bg-gray-900 px-4 sm:px-10"
     >
       <h2
-        className="text-2xl sm:text-3xl font-bold mb-8 text-center text-blue-700 dark:text-white"
+        className="text-2xl sm:text-3xl font-bold mb-8 text-center text-indigo-400 dark:text-white"
         data-aos="fade-down"
       >
-        My Projects
+        Selected Projects
       </h2>
 
       <div className="flex justify-center gap-4 mb-12 flex-wrap items-center">
@@ -38,7 +38,7 @@ export default function Projects() {
             onClick={() => setSelectedCategory(cat)}
             className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
               selectedCategory === cat
-                ? "bg-blue-600 text-white border-blue-600"
+                ? "bg-indigo-400 text-white border-indigo-400"
                 : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-white border-gray-300 dark:border-gray-600"
             }`}
           >
@@ -65,8 +65,8 @@ export default function Projects() {
                 loading="lazy"
                 className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/20 transition-colors duration-300 flex items-center justify-center">
-                <span className="text-white font-semibold text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-blue-600/80 px-4 py-2 rounded-lg">
+              <div className="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/20 transition-colors duration-300 flex items-center justify-center">
+                <span className="text-white font-semibold text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-indigo-400 px-4 py-2 rounded-lg">
                   View Details
                 </span>
               </div>
@@ -88,7 +88,7 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              <div className="flex justify-between text-sm text-blue-600 dark:text-blue-400">
+              <div className="flex justify-between text-sm text-indigo-500 dark:text-indigo-400">
                 <span className="group-hover:underline">View Project →</span>
               </div>
             </div>
