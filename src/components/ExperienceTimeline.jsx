@@ -65,14 +65,14 @@ const ExperienceTimeline = () => {
               }`}
             >
               <div className="bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-shadow">
-                <span className="text-sm text-indigo-400 font-semibold">
-                  {item.period}
-                </span>
-                <h3 className="text-lg font-bold text-gray-800 dark:text-white mt-1">
+                <h3 className="text-lg font-semibold text-gray-800 dark:text-white mt-1">
                   {item.title}
                 </h3>
+                <span className="text-sm text-indigo-400 font-medium">
+                  {item.period}
+                </span>
                 <p className="text-sm text-indigo-400">{item.org}</p>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">
+                <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
                   {item.description}
                 </p>
               </div>
