@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 bg-indigo-100 dark:bg-gray-900 px-4 sm:px-10"
+      className="py-20 max-w-7xl mx-auto bg-indigo-100 dark:bg-gray-900 px-4 sm:px-10"
     >
       <h2
         className="text-2xl sm:text-3xl font-bold mb-8 text-center text-indigo-400 dark:text-white"
@@ -32,7 +32,7 @@ export default function Projects() {
       </h2>
 
       <div className="flex justify-center gap-4 mb-12 flex-wrap items-center">
-        {["all", "frontend", "Backend", "full-stack"].map((cat) => (
+        {["all", "Web App", "Mobile App"].map((cat) => (
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
@@ -66,9 +66,9 @@ export default function Projects() {
                 className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/20 transition-colors duration-300 flex items-center justify-center">
-                <span className="text-white font-semibold text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-indigo-400 px-4 py-2 rounded-lg">
+                {/* <span className="text-white font-semibold text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-indigo-400 px-4 py-2 rounded-lg">
                   View Details
-                </span>
+                </span> */}
               </div>
             </div>
             <div className="p-5">

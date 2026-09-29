@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaArrowLeft, FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
+// import "yet-another-react-lightbox/styles.css";
 import allProjects from "../data/projects";
 import PageTransition from "../components/PageTransition";
 
@@ -83,7 +83,7 @@ const ProjectDetailPage = () => {
             </div>
 
             {/* Links */}
-            <div className="flex gap-4 mb-12">
+            <div className="">
               <a
                 href={project.live}
                 target="_blank"
@@ -92,18 +92,18 @@ const ProjectDetailPage = () => {
               >
                 <FaExternalLinkAlt /> Live Preview
               </a>
-              <a
+              {/* <a
                 href={project.code}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gray-800 dark:bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition font-semibold"
               >
                 <FaGithub /> Source Code
-              </a>
+              </a> */}
             </div>
 
             {/* Case study sections */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   The Challenge
@@ -120,10 +120,10 @@ const ProjectDetailPage = () => {
                   {project.solution}
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Features */}
-            {project.features && (
+            {/* {project.features && (
               <div className="mb-12">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                   Key Features
@@ -145,7 +145,7 @@ const ProjectDetailPage = () => {
                   ))}
                 </div>
               </div>
-            )}
+            )} */}
           </motion.div>
         </div>
       </div>
