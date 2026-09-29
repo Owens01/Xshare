@@ -17,7 +17,7 @@ const ServicesPage = () => {
           content="Frontend development services."
         />
       </Helmet>
-      <div className="pt-20 md:pt-0 bg-indigo-100">
+      <div className="md:pt-0 bg-indigo-100">
         <Services />
       </div>
     </PageTransition>

@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -47,7 +46,7 @@ const Contact = () => {
       toast.success("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-       toast.error("Failed to send message. Please try again.");
+      toast.error("Failed to send message. Please try again.");
     } finally {
       setIsSending(false);
     }
@@ -56,16 +55,25 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 px-6 md:px-20 bg-gray-50 dark:bg-[#0e0e0e] text-gray-900 dark:text-white transition-colors duration-300"
+      className="py-20 px-6 md:px-20 bg-indigo-100 dark:bg-[#0e0e0e] text-gray-900 dark:text-white transition-colors duration-300"
     >
       <motion.h2
-        className="text-2xl sm:text-3xl font-bold text-center mb-10"
+        className="text-xl md:text-2xl font-medium text-center mb-3"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Get in Touch
+        Let’s work together
       </motion.h2>
+      <motion.p
+        className="text-sm md-text-base text-center mb-4 text-gray-500"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        Want to build something great? Send me a message and I’ll get back to
+        you.
+      </motion.p>
 
       <motion.form
         onSubmit={handleSubmit}
@@ -115,7 +123,7 @@ const Contact = () => {
         <motion.button
           type="submit"
           disabled={isSending}
-          className="bg-blue-600 text-white py-3 px-6 rounded-lg font-bold shadow-md hover:shadow-lg transition duration-300 hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="bg-indigo-400 text-white w-full py-3 px-6 rounded-full font-semibold shadow-md hover:shadow-lg transition duration-300 hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
           whileHover={{ scale: isSending ? 1 : 1.05 }}
           whileTap={{ scale: isSending ? 1 : 0.95 }}
         >

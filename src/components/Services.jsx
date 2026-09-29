@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="bg-indigo-100 mt-10 relative dark:bg-[#121212]"
+      className="bg-indigo-100 relative dark:bg-[#121212]"
     >
       <div className="max-w-7xl mx-auto flex flex-col justify-center md:h-dvh text-center px-3 md:px-0">
         <h2
@@ -24,16 +24,16 @@ const Services = () => {
         </h2>
         <p
           className="dark:text-white mb-12 dark:text-white/60"
-          data-aos="slide-right"
-          data-aos-delay="1000"
-          data-aos-duration="2000"
+          data-aos="fade"
+          data-aos-delay="500"
+          data-aos-duration="700"
         >
           I'm a frontend engineer delivering robust, scalable, and efficient
           web/mobile applications.
         </p>
 
         {/* Service Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (
             <div
               key={index}
@@ -55,7 +55,7 @@ const Services = () => {
         {/* Tech Stack */}
         <h3
           className="text-xl md:text-2xl text-indigo-400 font-semibold mb-4"
-          data-aos="slide-left"
+          data-aos="fade"
           data-aos-delay="400"
           data-aos-duration="800"
           data-aos-easing="ease-in-out"

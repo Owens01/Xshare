@@ -74,21 +74,21 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md dark:bg-gray-900 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 md:px-16 py-3 flex items-center gap-6 justify-between">
+      <div className="max-w-7xl mx-auto py-2 flex items-center gap-6 justify-between">
         {/* Logo */}
-        <div className="text-2xl font-bold text-gray-800 dark:text-white">
+        <div>
           <Link to="/">
             {isDarkMode ? (
               <img
-                src="/assets/logo-white.png"
-                alt="Emmanuel Ebri logo"
-                className="w-20"
+                src="/assets/logo-dark.png"
+                alt="Owen logo"
+                className="w-[60px]"
               />
             ) : (
               <img
-                src="/assets/logo-black.png"
-                alt="Emmanuel Ebri logo"
-                className="w-20"
+                src="/assets/logo-light.png"
+                alt="Owen logo"
+                className="w-[60px]"
               />
             )}
           </Link>
@@ -103,8 +103,8 @@ const Header = () => {
               className={({ isActive }) =>
                 `border-b-2 pb-1 transition-colors ${
                   isActive
-                    ? "text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400"
-                    : "border-transparent hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-600 dark:hover:border-blue-400"
+                    ? "text-indigo-400  border-indigo-400"
+                    : "border-transparent hover:text-indigo-400 hover:border-indigo-400"
                 }`
               }
             >
@@ -120,17 +120,17 @@ const Header = () => {
             onClick={toggleDarkMode}
             className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors"
           >
-            {isDarkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
+            {isDarkMode ? <FaSun size={18} /> : <FaMoon size={18} />}
           </button>
 
           {/* Certifications (Desktop) */}
           <div className="relative hidden lg:block">
-            <button
+            {/* <button
               onClick={toggleCertDropdown}
               className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-sm font-medium"
             >
               Certifications
-            </button>
+            </button> */}
 
             <AnimatePresence>
               {showCertDropdown && (
@@ -153,7 +153,7 @@ const Header = () => {
                       <a
                         href={cert.file}
                         download
-                        className="text-xs bg-blue-600 text-white px-2 py-1 rounded hover:bg-blue-700"
+                        className="text-xs bg-indigo-400 text-white px-2 py-1 rounded hover:bg-indigo-400"
                       >
                         Download
                       </a>
@@ -192,7 +192,7 @@ const Header = () => {
               className={({ isActive }) =>
                 `text-lg ${
                   isActive
-                    ? "text-blue-600 dark:text-blue-400 font-semibold"
+                    ? "text-indigo-400 font-semibold"
                     : "text-gray-800 dark:text-gray-100"
                 }`
               }

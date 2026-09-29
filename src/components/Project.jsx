@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20  bg-indigo-100 dark:bg-gray-900 px-4 sm:px-10"
+      className="py-20 bg-indigo-100 dark:bg-gray-900 px-4 sm:px-10"
     >
       <h2
         className="text-2xl sm:text-3xl font-bold mb-8 text-center text-indigo-400 dark:text-white"

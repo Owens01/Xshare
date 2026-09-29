@@ -23,7 +23,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 bg-indigo-50 dark:bg-[#090e34] dark:bg-inherit  text-gray-300 dark:text-white"
+      className="py-20 bg-indigo-100 dark:bg-[#090e34] dark:bg-inherit text-gray-300 dark:text-white"
     >
       <motion.h2
         className="text-2xl sm:text-3xl font-bold mb-10 text-center px-4 text-indigo-400"
@@ -61,7 +61,7 @@ const About = () => {
             web and cross-platform mobile applications using technologies such
             as React, Next.js, React Native, Expo, TypeScript, and Tailwind CSS.
             I enjoy collaborating with teams to solve complex problems, deliver
-            high-quality products, and create intuitive user experiences. With
+            high quality products, and create intuitive user experiences. With
             experience across fintech, social media, e-commerce, and software
             agency environments, I have built scalable web applications and
             cross platform mobile solutions that prioritize performance,
