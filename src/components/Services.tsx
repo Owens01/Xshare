@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { services, techStack } from "../data/services.jsx";
+import { services, techStack } from "../data/services.js";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
