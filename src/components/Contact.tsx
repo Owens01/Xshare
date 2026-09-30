@@ -55,7 +55,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 px-6 md:px-20 bg-indigo-100 dark:bg-[#0e0e0e] text-gray-900 dark:text-white transition-colors duration-300"
+      className="py-20 px-6 md:px-20 bg-indigo-100 dark:bg-inherit text-gray-900 dark:text-white transition-colors duration-300"
     >
       <motion.h2
         className="text-xl md:text-2xl font-medium text-center mb-3"

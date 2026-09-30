@@ -22,14 +22,14 @@ const PageTransition = ({ children }) => {
           <>
             {/* Top half */}
             <motion.div
-              className="fixed top-0 left-0 w-full h-1/2 bg-[#090e34] z-[60]"
+              className="fixed top-0 left-0 w-full h-1/2 bg-indigo-100 dark:bg-gray-900 z-[60]"
               initial={{ y: 0 }}
               animate={{ y: "-100%" }}
               transition={doorTransition}
             />
             {/* Bottom half */}
             <motion.div
-              className="fixed bottom-0 left-0 w-full h-1/2 bg-[#090e34] z-[60]"
+              className="fixed bottom-0 left-0 w-full h-1/2 bg-indigo-100 dark:bg-gray-900 z-[60]"
               initial={{ y: 0 }}
               animate={{ y: "100%" }}
               transition={doorTransition}

@@ -9,9 +9,9 @@ const NotFoundPage = () => {
       <Helmet>
         <title>404 Page Not Found | Owen</title>
       </Helmet>
-      <div className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-[#121212] text-gray-900 dark:text-white px-6">
+      <div className="min-h-screen flex flex-col items-center justify-center bg-indigo-100 dark:bg-gray-900 text-gray-900 dark:text-white px-6">
         <motion.h1
-          className="text-8xl font-bold text-blue-600 mb-4"
+          className="text-8xl font-bold text-indigo-400 mb-4"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -33,7 +33,7 @@ const NotFoundPage = () => {
         >
           <Link
             to="/"
-            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-semibold"
+            className="bg-indigo-400 text-white px-6 py-3 rounded-lg hover:bg-indigo-500 transition font-semibold"
           >
             Go Back Home
           </Link>
