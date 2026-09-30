@@ -73,7 +73,7 @@ const Header = () => {
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md dark:bg-gray-900 transition-colors duration-300">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white/70 shadow-md dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto py-2 max-sm:px-2 flex items-center gap-6 justify-between">
         {/* Logo */}
         <div>
