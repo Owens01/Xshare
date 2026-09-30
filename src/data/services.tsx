@@ -1,12 +1,12 @@
+import { FaReact, FaGitAlt } from "react-icons/fa";
 import {
-  FaReact,
-  FaNodeJs,
-  FaDatabase,
-  FaJs,
-  FaGitAlt,
-  FaPython,
-} from "react-icons/fa";
-import { SiMongodb, SiPostgresql, SiMysql, SiTypescript } from "react-icons/si";
+  SiTypescript,
+  SiNextdotjs,
+  SiVuedotjs,
+  SiExpo,
+  SiTanstack,
+} from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
 export const services = [
   {
@@ -19,7 +19,7 @@ export const services = [
     title: "Mobile App Development",
     description:
       "Designing and building responsive, user centered mobile applications using React Native and Expo, with a focus on performance, accessibility, intuitive interactions, and seamless user experiences across iOS and Android devices.",
-    icon: <FaReact className="text-blue-500 text-4xl" />,
+    icon: <SiExpo className="text-black dark:text-white text-xl md:text-2xl" />,
   },
 ];
 
@@ -27,34 +27,39 @@ export const techStack = [
  
   {
     name: "React",
-    icon: <FaReact className="text-cyan-500 text-xl md:text-4xl" />,
+    icon: <FaReact className="text-cyan-500 text-xl md:text-3xl" />,
   },
   {
-    name: "Node.js",
-    icon: <FaNodeJs className="text-green-600 text-xl md:text-4xl" />,
+    name: "Next.js",
+    icon: (
+      <SiNextdotjs className="text-black dark:text-white text-xl md:text-3xl" />
+    ),
   },
   {
     name: "TypeScript",
-    icon: <SiTypescript className="text-blue-600 text-xl md:text-4xl" />,
+    icon: <SiTypescript className="text-blue-600 text-xl md:text-3xl" />,
   },
   {
-    name: "MongoDB",
-    icon: <SiMongodb className="text-green-600 text-xl md:text-4xl" />,
+    name: "Vue.js",
+    icon: <SiVuedotjs className="text-green-500 text-xl md:text-3xl" />,
   },
   {
-    name: "MySQL",
-    icon: <SiMysql className="text-blue-400 text-xl md:text-4xl" />,
+    name: "React Native",
+    icon: (
+      <TbBrandReactNative className="text-blue-500 text-xl md:text-3xl" />
+    ),
   },
   {
-    name: "PostgreSQL",
-    icon: <SiPostgresql className="text-blue-400 text-xl md:text-4xl" />,
+    name: "Expo",
+    icon: <SiExpo className="text-black dark:text-white text-xl md:text-3xl" />,
+  },
+  {
+    name: "TanStack Start",
+    icon: <SiTanstack className="text-orange-500 text-xl md:text-3xl" />,
   },
   {
     name: "Git",
-    icon: <FaGitAlt className="text-red-500 text-xl md:text-4xl" />,
+    icon: <FaGitAlt className="text-red-500 text-xl md:text-3xl" />,
   },
-  {
-    name: "Python",
-    icon: <FaPython className="text-yellow-500 text-xl md:text-4xl" />,
-  },
+  
 ];

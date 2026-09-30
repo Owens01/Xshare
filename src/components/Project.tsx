@@ -72,22 +72,9 @@ export default function Projects() {
               </div>
             </div>
             <div className="p-5">
-              <h3 className="text-base font-semibold text-gray-800 dark:text-white mb-2">
+              <h3 className="text-base font-semibold text-gray-800 dark:text-white">
                 {project.title}
               </h3>
-              {/* <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-                {project.description}
-              </p> */}
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.tech.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="bg-gray-200 dark:bg-gray-700 text-xs text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
               <div className="flex justify-between text-sm text-indigo-500 dark:text-indigo-400">
                 <span className="group-hover:underline">View Project →</span>
               </div>

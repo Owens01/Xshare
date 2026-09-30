@@ -18,7 +18,7 @@ const allProjects = [
     id: "Ventlio",
     title: "Ventlio",
     description:
-      "An offline first inventory management and point-of-sale (POS) platform designed for small and medium sized businesses in Nigeria and across Africa.",
+      "An offline first inventory management and point of sale (POS) platform designed for small and medium sized businesses in Nigeria and across Africa.",
     image: "/assets/Ventlio.png",
     tech: [],
     category: "Web App",

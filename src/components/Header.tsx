@@ -74,7 +74,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md dark:bg-gray-900 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto py-2 flex items-center gap-6 justify-between">
+      <div className="max-w-7xl mx-auto py-2 max-sm:px-2 flex items-center gap-6 justify-between">
         {/* Logo */}
         <div>
           <Link to="/">
@@ -82,13 +82,13 @@ const Header = () => {
               <img
                 src="/assets/logo-dark.png"
                 alt="Owen logo"
-                className="w-[60px]"
+                className="w-[60px] max-sm:w-[50px]"
               />
             ) : (
               <img
                 src="/assets/logo-light.png"
                 alt="Owen logo"
-                className="w-[60px]"
+                className="w-[60px] max-sm:w-[50px]"
               />
             )}
           </Link>
@@ -172,7 +172,7 @@ const Header = () => {
             onClick={toggleMobileMenu}
             className="lg:hidden p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition"
           >
-            {isMobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+            {isMobileMenuOpen ? <FaTimes size={18} /> : <FaBars size={18} />}
           </button>
         </div>
       </div>
@@ -203,12 +203,12 @@ const Header = () => {
 
           {/* Certifications (Mobile) */}
           <div>
-            <button
+            {/* <button
               onClick={toggleCertDropdown}
               className="w-full text-left text-lg text-gray-800 dark:text-gray-100"
             >
               Certifications
-            </button>
+            </button> */}
 
             <AnimatePresence>
               {showCertDropdown && (

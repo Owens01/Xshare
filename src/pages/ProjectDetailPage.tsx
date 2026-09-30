@@ -2,7 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaArrowLeft, FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaArrowLeft, FaExternalLinkAlt } from "react-icons/fa";
 import Lightbox from "yet-another-react-lightbox";
 // import "yet-another-react-lightbox/styles.css";
 import allProjects from "../data/projects";
@@ -27,11 +27,11 @@ const ProjectDetailPage = () => {
         <meta property="og:image" content={project.image} />
       </Helmet>
       <div className="bg-indigo-100 dark:bg-inherit">
-        <div className="pt-24 pb-20 px-4 mt-6 sm:px-10 max-w-5xl mx-auto ">
+        <div className="pt-24 pb-10 px-4 mt-6 sm:px-10 max-w-5xl mx-auto ">
           {/* Back button */}
           <Link
             to="/projects"
-            className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-500 mb-8 font-medium transition-colors"
+            className="text-sm inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-500 mb-8 font-medium transition-colors"
           >
             <FaArrowLeft /> Back to Projects
           </Link>
@@ -63,10 +63,10 @@ const ProjectDetailPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h1 className="text-base md:text-3xl font-bold text-gray-900 dark:text-white mb-3">
               {project.title}
             </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+            <p className="text-sm md:text-lg text-gray-600 dark:text-gray-300 mb-6">
               {project.description}
             </p>
 
@@ -88,7 +88,7 @@ const ProjectDetailPage = () => {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-indigo-400 text-white px-6 py-3 rounded-lg hover:bg-indigo-400 transition font-semibold"
+                className="inline-flex items-center max-sm:text-sm gap-2 bg-indigo-400 text-white px-6 py-3 rounded-lg hover:bg-indigo-400 transition font-semibold"
               >
                 <FaExternalLinkAlt /> Live Preview
               </a>

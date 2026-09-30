@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  @apply bg-indigo-100 text-black dark:bg-[#121212] dark:text-white font-sans;
+  @apply bg-indigo-100 text-black dark:bg-[#121212] caret-transparent dark:text-white font-sans;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

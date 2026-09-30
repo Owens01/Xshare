@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="bg-indigo-100 relative dark:bg-[#121212]"
+      className="max-sm:pt-20 bg-indigo-100 relative dark:bg-[#121212]"
     >
       <div className="max-w-7xl mx-auto flex flex-col justify-center md:h-dvh text-center px-3 md:px-0">
         <h2
@@ -63,14 +63,14 @@ const Services = () => {
           Tech Stack
         </h3>
         <div className="relative px-4">
-          <div className="flex justify-between items-center px-2 md:px-4 py-4">
+          <div className="grid grid-cols-4 gap-x-2 gap-y-6 px-2 py-4 md:flex md:justify-between md:items-center md:px-4">
             {techStack.map((tech, i) => (
               <div
                 key={i}
-                className="flex flex-col justify-between items-center gap-2"
+                className="flex flex-col justify-start items-center gap-2 min-w-0 text-center"
               >
                 {tech.icon}
-                <span className="mt-2 md:text-sm text-[8px] text-black dark:text-white/80">
+                <span className="mt-1 md:mt-2 md:text-sm text-[10px] leading-tight text-center text-black dark:text-white/80">
                   {tech.name}
                 </span>
               </div>
