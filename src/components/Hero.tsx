@@ -66,7 +66,7 @@ const Hero = () => {
             alt="Owen image"
             className="w-full rounded-xl object-cover"
           />
-          <div className="absolute top-0 right-0 left-0 bottom-14 bg-black/5 dark:bg-black/30 rounded-lg rounded-tl-2xl"></div>
+          <div className="absolute top-0 right-0 left-0 md:bottom-0 bottom-14 bg-black/5 dark:bg-black/30 rounded-lg rounded-tl-2xl"></div>
         </motion.div>
       </div>
     </section>
