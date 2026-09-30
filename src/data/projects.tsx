@@ -120,8 +120,8 @@ const allProjects = [
     features: [],
   },
   {
-    id: "Growthlobby Agency Website",
-    title: "Growthlobby Agency Website",
+    id: "Growthlobby",
+    title: "Growthlobby",
     description:
       "A digital design and development studio that helps businesses build websites, apps, and brand identities.",
     image: "/assets/Growthlobby.png",

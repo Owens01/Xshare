@@ -52,18 +52,18 @@ export default function Projects() {
           <Link
             key={project.id}
             to={`/projects/${project.id}`}
-            className={`bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-in-out group block no-underline ${project.span}`}
+            className={`bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-in-out group flex flex-col h-full no-underline ${project.span}`}
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden h-48 sm:h-52 shrink-0">
               <img
                 src={project.image}
                 alt={`${project.title} screenshot`}
                 loading="lazy"
-                className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/20 transition-colors duration-300 flex items-center justify-center">
                 {/* <span className="text-white font-semibold text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-indigo-400 px-4 py-2 rounded-lg">
@@ -71,7 +71,7 @@ export default function Projects() {
                 </span> */}
               </div>
             </div>
-            <div className="p-5">
+            <div className="p-5 mt-auto flex flex-col gap-1 flex-1 justify-end">
               <h3 className="text-base font-semibold text-gray-800 dark:text-white">
                 {project.title}
               </h3>
